@@ -1,0 +1,38 @@
+.date {
+    padding: 1rem 2rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    color: white;
+    background-color: #1e3050;
+}
+
+.sectionDay {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+    .sectionDay {
+        display: grid;
+        grid-template-columns: repeat(2, 28rem);
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .sectionDay {
+        grid-template-columns: repeat(2, 32rem);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sectionDay {
+        grid-template-columns: repeat(3, 32rem);
+        gap: 5rem;
+    }
+}

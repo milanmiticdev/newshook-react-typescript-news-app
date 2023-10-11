@@ -1,0 +1,17 @@
+.message {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: bold;
+	color: #1e3050;
+}
+
+@media screen and (min-width: 600px) {
+	.message {
+		font-size: 4rem;
+	}
+}

@@ -1,0 +1,81 @@
+.articleCard {
+	display: flex;
+	flex-flow: column wrap;
+	height: 30rem;
+	width: 80vw;
+	font-weight: bold;
+	border-radius: 2rem;
+	overflow: hidden;
+	font-size: 1.3rem;
+	color: #1e3050;
+	background-color: #f4f5f7;
+	box-shadow: 0.1rem 0.1rem 0.5rem #cbd5e1;
+}
+
+.image {
+	height: 50%;
+	width: 100%;
+}
+
+.image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.heading {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 100%;
+	padding: 1.5rem;
+	text-align: center;
+}
+
+.link {
+	transition: 0.15s linear;
+	text-decoration: none;
+}
+
+.link:hover {
+	transition: 0.15s linear;
+	transform: scale(1.05);
+}
+
+@media screen and (min-width: 300px) {
+	.articleCard {
+		width: 24rem;
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.articleCard {
+		height: 36rem;
+		width: 32rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.articleCard {
+		width: 28rem;
+		font-size: 1.65rem;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.articleCard {
+		width: 32rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.articleCard {
+		width: 32rem;
+		font-size: 1.8rem;
+	}
+}

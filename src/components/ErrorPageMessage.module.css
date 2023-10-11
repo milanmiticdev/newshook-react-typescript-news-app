@@ -1,0 +1,24 @@
+.errorPageMessage {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 3;
+	font-weight: bold;
+	color: #1e3050;
+}
+
+.errorPageMessage :first-child {
+	font-size: 3.25rem;
+}
+
+@media screen and (min-width: 600px) {
+	.errorPageMessage {
+		font-size: 4rem;
+	}
+	.errorPageMessage :first-child {
+		font-size: 4.25rem;
+	}
+}
