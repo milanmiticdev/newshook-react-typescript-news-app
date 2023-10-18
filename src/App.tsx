@@ -2,7 +2,7 @@ import AppContext from './contexts/AppContext.ts';
 import type { ArticleType } from './types/types.ts';
 
 // Custom Hook
-import useLocalStorage from './hooks/useLocalStorage.tsx';
+import useLocalStorage from './hooks/useLocalStorage.ts';
 
 // Import from React Router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
