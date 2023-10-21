@@ -1,8 +1,17 @@
+// Hooks
 import { useContext } from 'react';
+
+// Context
 import AppContext from '../contexts/AppContext.ts';
+
+// Router
 import { Link } from 'react-router-dom';
-import styles from './ArticleCard.module.css';
+
+// Types
 import type { ArticleCardProps } from '../types/props.ts';
+
+// Styles
+import styles from './ArticleCard.module.css';
 
 const ArticleCard = ({ article }: ArticleCardProps): JSX.Element => {
 	const { setFullArticle } = useContext(AppContext);

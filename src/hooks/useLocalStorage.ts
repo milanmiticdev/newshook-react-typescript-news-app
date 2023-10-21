@@ -1,4 +1,7 @@
+// Hooks
 import { useState, useEffect } from 'react';
+
+// Types
 import type { UseLocalStorageType } from '../types/types.ts';
 
 const useLocalStorage = <T>(key: string, initialValue: T): UseLocalStorageType<T> => {

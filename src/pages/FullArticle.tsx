@@ -1,5 +1,10 @@
+// Hooks
 import { useEffect, useContext } from 'react';
+
+// Context
 import AppContext from '../contexts/AppContext.ts';
+
+// Components
 import Article from '../components/Article.tsx';
 
 const FullArticle = (): JSX.Element => {

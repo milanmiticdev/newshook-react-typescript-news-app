@@ -1,6 +1,9 @@
-import styles from './SectionDay.module.css';
+// Types
 import type { SectionDayProps } from '../types/props.ts';
 import type { DateType } from '../types/types.ts';
+
+// Styles
+import styles from './SectionDay.module.css';
 
 const SectionDay = ({ children, date }: SectionDayProps): JSX.Element => {
 	const formatedDate: DateType = {
@@ -11,9 +14,7 @@ const SectionDay = ({ children, date }: SectionDayProps): JSX.Element => {
 
 	return (
 		<>
-			<p
-				className={styles.date}
-			>{`${formatedDate.day}.${formatedDate.month}.${formatedDate.year}`}</p>
+			<p className={styles.date}>{`${formatedDate.day}.${formatedDate.month}.${formatedDate.year}`}</p>
 			<section className={styles.sectionDay}>{children}</section>
 		</>
 	);

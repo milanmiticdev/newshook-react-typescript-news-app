@@ -1,4 +1,7 @@
+// Hooks
 import { useEffect, useReducer } from 'react';
+
+// Components
 import Message from './Message.tsx';
 import SectionDay from './SectionDay.tsx';
 import ArticleCard from './ArticleCard.tsx';
@@ -84,9 +87,7 @@ const Display = ({ section }: DisplayProps): JSX.Element => {
 	};
 
 	// Array of all dates from fetched articles with duplicate values
-	const publicationDates: string[] = state.articles.map((article: ArticleType): string =>
-		formatDate(article)
-	);
+	const publicationDates: string[] = state.articles.map((article: ArticleType): string => formatDate(article));
 
 	// Select only unique values of dates which will be used to display articles by date on the page
 	const dates: string[] = Array.from(new Set(publicationDates));
@@ -107,9 +108,7 @@ const Display = ({ section }: DisplayProps): JSX.Element => {
 					return (
 						<SectionDay key={date} date={date}>
 							{state.articles
-								.filter(
-									(article: ArticleType): boolean => formatDate(article) === date
-								)
+								.filter((article: ArticleType): boolean => formatDate(article) === date)
 								.map(
 									(article: ArticleType): JSX.Element => (
 										<ArticleCard key={article.id} article={article} />

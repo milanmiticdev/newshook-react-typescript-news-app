@@ -1,6 +1,13 @@
+// Hooks
 import { useState, useEffect, useContext } from 'react';
+
+// Context
 import AppContext from '../contexts/AppContext.ts';
+
+// HTML Parser
 import parse from 'html-react-parser';
+
+// Styles
 import styles from './Article.module.css';
 
 const Article = (): JSX.Element => {

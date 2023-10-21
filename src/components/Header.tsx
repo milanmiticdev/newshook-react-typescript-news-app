@@ -1,7 +1,12 @@
+// Router
 import { Link } from 'react-router-dom';
+
+// Styles
+import styles from './Header.module.css';
+
+// FontAwesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
-import styles from './Header.module.css';
 
 const Header = (): JSX.Element => {
 	return (

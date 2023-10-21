@@ -1,3 +1,4 @@
+// Styles
 import styles from './ErrorPageMessage.module.css';
 
 const ErrorPageMessage = (): JSX.Element => {

@@ -1,11 +1,11 @@
-import AppContext from './contexts/AppContext.ts';
-import type { ArticleType } from './types/types.ts';
-
-// Custom Hook
+// Hooks
 import useLocalStorage from './hooks/useLocalStorage.ts';
 
-// Import from React Router
+// Router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Context
+import AppContext from './contexts/AppContext.ts';
 
 // Pages
 import AppSharedLayout from './pages/AppSharedLayout.tsx';
@@ -17,11 +17,11 @@ import NewsAustralia from './pages/NewsAustralia.tsx';
 import FullArticle from './pages/FullArticle.tsx';
 import ErrorPage from './pages/ErrorPage.tsx';
 
+// Types
+import type { ArticleType } from './types/types.ts';
+
 const App = () => {
-	const [fullArticle, setFullArticle] = useLocalStorage<ArticleType>(
-		'react-news.article',
-		{} as ArticleType
-	);
+	const [fullArticle, setFullArticle] = useLocalStorage<ArticleType>('react-news.article', {} as ArticleType);
 
 	return (
 		<AppContext.Provider

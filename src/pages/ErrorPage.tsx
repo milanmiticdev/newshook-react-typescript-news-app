@@ -1,3 +1,4 @@
+// Components
 import Main from '../components/Main.tsx';
 import ErrorPageMessage from '../components/ErrorPageMessage.tsx';
 

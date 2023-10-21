@@ -1,4 +1,7 @@
+// Hooks
 import { useEffect } from 'react';
+
+// Components
 import Home from '../components/Home.tsx';
 
 const HomePage = (): JSX.Element => {
