@@ -16,7 +16,11 @@ const useLocalStorage = <T>(key: string, initialValue: T): UseLocalStorageType<T
 	});
 
 	useEffect((): void => {
-		window.localStorage.setItem(key, JSON.stringify(value));
+		if (value === undefined) {
+			window.localStorage.remove(key);
+		} else {
+			window.localStorage.setItem(key, JSON.stringify(value));
+		}
 	}, [key, value]);
 
 	return [value, setValue];
